@@ -1,0 +1,27 @@
+/* Tablets / Telas Médias (Até 992px) */
+@media (max-width: 992px) {
+    body-background {
+        min-height: 65vh; 
+        /* Reduz um pouco a altura para proporcionalizar a visualização */
+        background-position: center bottom; 
+        /* Foca na parte inferior onde as montanhas/curvas se destacam */
+    }
+}
+
+/* Celulares em Modo Retrato / Telas Pequenas (Até 768px) */
+@media (max-width: 768px) {
+    body-background {
+        min-height: 50vh; 
+        /* Ajusta a altura proporcional às telas de celulares */
+        background-image: linear-gradient(to bottom, white, var(--roxo));
+    }
+}
+
+/* Celulares Muito Pequenos (Até 480px) */
+@media (max-width: 480px) {
+    body-background {
+        min-height: 40vh; 
+        /* Evita que o fundo ocupe espaço excessivo no celular */
+         background-image: linear-gradient(to bottom, white, var(--roxo));
+    }
+}

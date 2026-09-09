@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Cossette+Titre:wght@400;700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mansalva&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+    --font-padrao: Quicksand, sans serif;
+    --font-padrao02: Nunito, sans serif;
+
+    --roxo: #501B69;
+    --roxo2: #290c37;
+    --lilas: #CE95D7;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+* {
+    font-family: var(--font-padrao);
+    color: var(--preto);
+    text-align: center;
+}
+
+body {
+    background-image: 
+    linear-gradient(to bottom, rgba(41, 12, 55, 0.4), rgba(80, 27, 105, 0.6)),
+    url('imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 80vh;
+}
+
+nav {
+    background-color: var(--roxo2);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    word-spacing: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--branco);
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--branco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--roxo2);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--lilas);
+    transition-duration: 0.5s;
+}
+
+.petis h1, p {
+    color: var(--roxo2);
+    font-weight: bolder;
+}
+
+.imagem-petis img {
+    border-radius: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+footer {
+    background-color: var(--roxo2);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    word-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer p{
+    color: var(--branco);
+}
+
+footer a {
+    color: var(--lilas);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: lightgray;
+    transition-duration: 0.5s;
+}
+
+/*
+| Redimensionar o tamanho da tela de forma responsiva
+
+| Adicionar border radius para as imagens ficarem mais arredondadas
+
+| Criar botões estilizados para o site
+*/
