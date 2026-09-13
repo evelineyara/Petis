@@ -32,30 +32,24 @@ body {
 }
 
 nav {
-    background-color: var(--roxo2);
     padding: 20px;
     border-radius: 30px;
     text-align: center;
     word-spacing: 15px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--branco);
 }
 
 nav a {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--branco);
-}
-
-a {
     text-decoration: none;
-    color: var(--roxo2);
-    font-weight: bold;
 }
 
 a:hover {
-    color: var(--lilas);
+    color: var(--roxo);
     transition-duration: 0.5s;
 }
 
