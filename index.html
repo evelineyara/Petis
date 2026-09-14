@@ -6,61 +6,53 @@
     <title>Petis</title>
     <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <!---
-        | Implementar formulário de cadastro do cliente e do pet.-->
-    <nav>
-        <a href="index.html">Home</a> |
-            
-            <a href="produtos.html" target="_blank">Produtos</a> |
-            
-            <a href="servicos.html" target="_blank">Serviços</a>
-    </nav>
-        <header>
-                <div class="petis">
-                    <h1>Petis</h1>
-                    <p>Amor & cuidado para o seu pet 💜🐾</p>
-                </div>
+    <header>
+        <nav>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+            <!--font-awesome cdnjs-->
 
-            <!--Logo do Petis-->
-            <div class="logo">
-                <img src="imagens/logo.png" alt="Logo da Petis com pets fofos em cor lilás e roxo" width="350px">
-            </div>
+            <a href="imagens/logo.png" alt="Logo da Petis">
+                <img src="imagens/logo.png" alt="Logo da Petis" class="logo">
+            </a>
+            <ul id="nav_list">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="servicos.html" target="_blank">Serviços</a>
+                </li>
+                <li>
+                    <a href="produtos.html" target="_blank">Produtos</a>
+                </li>
+            </ul>
 
-            <!--Sobre a Petis-->
-            <h3>Bem-vindos(as) à Petis! Somos a maior Petshop do <a href="https://www.google.com/maps/place/Rio+Grande+do+Sul" target="_blank">Rio Grande do Sul</a>!</h3>
-                <br>
-                    <main>
-                        <p>
-                        Aqui você encontra <strong>produtos 100% veganos</strong> de alta qualidade para o seu pet, serviços de banho e tosa, agendamento por tele e busca, além de um preço acessível para todos os clientes. No Petis cada animalzinho é tratado com muito amor e carinho em todas as etapas. <br>
-                        Venha nos visitar e conhecer nossos produtos e serviços!
-                        </p>
-                        
-                        <p><strong>Nosso diferencial</strong> são os <strong>produtos feitos com lavanda</strong>, cultivadas por nossa equipe, que proporciona um aroma suave e calmante para seu pet, além de deixar um cheirinho agradável e duradouro. 🪻</p>
-                    </main>
+            <button class="btn-default">
+                Agendar Aqui
+            </button>
 
-                    <h4>Estamos localizados na <a href="#" target="_blank">Rua das Flores, 123, Porto Alegre | RS</a>
-                    </h4>
-                    <p><strong>Aguardamos a sua visita!💜🐾</strong></p>
-        </header>
-            <br>
 
-            <!--Imagem da Petis-->
-            <div class="imagem-petis">
-                <img src="imagens/petis.jpg" alt="Imagem da Petis" width="70%">
-            </div>
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-            <br>
+        </nav>
 
-        <!--Footer com informações de contato e meu Github-->
-        <footer>
-            <p>Site criado por <a href="https://github.com/evelineyara" target="_blank">Evelin Nayara </a>
-                 | Whatsapp: <a href="https://wa.me/51999999999" target="_blank">(51) 99999-9999</a>
-                  
-                 | Email: 
-                 <a href="mailto:petisoficial@gmail.com" target="_blank">petisoficial@gmail.com</a>
-            </p>
-        </footer>
+        <div id="mobile_menu"></div>
+        <ul id="mobile_nav_list">
+            <li>
+                <a href="index.html">Inicio</a>
+                </li>
+            <li>
+                <a href="servicos.html" target="_blank">Serviços</a>
+            </li>
+
+            <li>
+                <a href="produtos.html" target="_blank">Produtos</a>
+            </li>
+            </ul>
+    </header>
 </body>
 </html>

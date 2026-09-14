@@ -8,89 +8,18 @@
 
     --roxo: #501B69;
     --roxo2: #290c37;
-    --lilas: #CE95D7;
+    --lilas: #f9d3ff;
     --preto: #000000;
     --branco: #FFFFFF;
 }
 
 * {
     font-family: var(--font-padrao);
-    color: var(--preto);
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: 
-    linear-gradient(to bottom, rgba(41, 12, 55, 0.4), rgba(80, 27, 105, 0.6)),
-    url('imagens/fundo.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    min-width: 50%;
-    min-height: 80vh;
+    background-color: var(--lilas);
 }
-
-nav {
-    padding: 20px;
-    border-radius: 30px;
-    text-align: center;
-    word-spacing: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    color: var(--branco);
-}
-
-nav a {
-    font-weight: bold;
-    font-size: 15px;
-    color: var(--branco);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--roxo);
-    transition-duration: 0.5s;
-}
-
-.petis h1, p {
-    color: var(--roxo2);
-    font-weight: bolder;
-}
-
-.imagem-petis img {
-    border-radius: 50px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-}
-
-footer {
-    background-color: var(--roxo2);
-    padding: 5px;
-    border-radius: 10px;
-    text-align: center;
-    word-spacing: 3px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-footer p{
-    color: var(--branco);
-}
-
-footer a {
-    color: var(--lilas);
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: lightgray;
-    transition-duration: 0.5s;
-}
-
-/*
-| Redimensionar o tamanho da tela de forma responsiva
-
-| Adicionar border radius para as imagens ficarem mais arredondadas
-
-| Criar botões estilizados para o site
-*/
