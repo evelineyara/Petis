@@ -12,14 +12,3 @@
     --preto: #000000;
     --branco: #FFFFFF;
 }
-
-* {
-    font-family: var(--font-padrao);
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--lilas);
-}
