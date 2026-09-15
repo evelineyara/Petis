@@ -224,13 +224,13 @@ main {
 }
 
 footer {
-    width: auto;
     text-align: center;
     align-items: center;
     background-color: #290c37;
     color: white;
-    padding: 18px;
-    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
 }
 
 footer a {
@@ -241,4 +241,9 @@ footer a {
 
 footer a:hover {
     color: #f8ceff;
+}
+
+footer > a > i {
+    font-size: 40px;
+    margin: 0 10px; /* Adiciona espaçamento nas laterais */
 }
