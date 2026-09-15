@@ -114,16 +114,16 @@ main {
 
 /* BOTÃO COMPRAR */
 .btn-comprar {
-  background-color: #2b1040; /* Roxo escuro do tema Petis */
+  background-color: #290c37; /* Roxo escuro do tema Petis */
   color: #ffffff;
   text-decoration: none;
   padding: 8px 16px;
-  border-radius: 6px;
+  border-radius: 20px;
   font-size: 0.85rem;
   font-weight: bold;
   transition: background-color 0.2s ease;
 }
 
 .btn-comprar:hover {
-  background-color: #4a1d6d; /* Cor um pouco mais clara no hover */
+  background-color: #572170; /* Cor um pouco mais clara no hover */
 }
