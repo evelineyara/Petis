@@ -119,7 +119,7 @@ main {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #ffffff7c;
     padding: 1.5rem;
     border-radius: 16px;
     flex: 1;
@@ -175,4 +175,24 @@ main {
     border-radius: 30px;
     font-size: 1.1rem;
     color: #572170;
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    align-items: center;
+    background-color: #290c37;
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #83438d;
+    transition-duration: 0.3s;
+}
+
+footer a:hover {
+    color: #f8ceff;
 }
