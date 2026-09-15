@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="servicos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
@@ -33,37 +34,72 @@
     2. Agendamento para Tele e Busca 
     3. Sem tele e busca -->
 
-        <main>
-            <article>
-                <h1>Serviços:</h1>
-                <p>
-                    <strong>Todos os nossos serviços oferecidos são APENAS POR AGENDAMENTO, entre em contato conosco pelo nosso <a href="mailto:petisoficial@gmail.com" target="_blank">Email</a> ou pelo <a href="https://wa.me/51999999999" target="_blank">Whatsapp</a> para mais informações!</strong>
-                </p>
-                
-                <p>
-                <strong>Horário de atendimento: Segunda a Sexta-feira das 08h às 18h | Sábado das 08h às 12h</strong>
-                </p>
-                <h2>Banho e Tosa | Sem tele & busca</h2>
-                    <img src="imagens/cachorro.jpg" alt="Banho e Tosa" width="300px">
-                    <p><strong>Valor: R$ 80,00</strong> | inclui penteados, laços, perfume suave de lavanda para todos os pets e petisco de lavanda.
-                    <br>
-                    <a href="https://wa.me/51999999999" target="_blank">Clique aqui</a> para agendar o serviço de <strong>Banho e Tosa sem Tele e Busca!</strong>
-                    </p>
-                    <br>
-                <h2>Banho e Tosa | Com tele & busca</h2>
-                    <img src="imagens/tele.jpg" alt="Banho e Tosa" width="75%">
-                    <p><strong>Valor: R$ 100,00</strong> | inclui penteados, laços, perfume suave de lavanda para todos os pets e petisco de lavanda.
-                    <br>
-                    <a href="https://wa.me/51999999999" target="_blank">Clique aqui</a> para agendar o serviço de <strong>Banho e Tosa com Tele e Busca!</strong> | Os serviços de Tele e Busca são realizados apenas em <strong>Porto Alegre e região metropolitana.</strong>
-                    </p>
-            </article>
-        </main>
+<section class="servicos-secao">
+  <!-- Cabeçalho Informativo -->
+  <div class="servicos-header">
 
-            <br>
+    <h1>Serviços</h1>
+    <p class="aviso-agendamento">
+      Todos os nossos serviços são prestados <strong>apenas por agendamento</strong>.
+    </p>
 
-            <div class="agradecimento">
-                <p>Petis agradece pela preferência, esperamos vê-lo novamente!</p>
-            </div>
+    <div class="horarios-info">
+      <span><strong>Segunda a Sexta:</strong> 08h às 18h</span> | 
+      <span><strong>Sábado:</strong> 08h às 12h</span>
+    </div>
+
+  </div>
+
+  <!-- Lista de Cards de Serviços -->
+  <div class="grid-servicos">
+
+    <!-- Card 1: Sem Tele & Busca -->
+    <article class="card-servico">
+      <div class="card-imagem">
+        <img src="imagens/cachorro.jpg" alt="Banho e Tosa em cachorro">
+      </div>
+
+      <div class="card-conteudo">
+        <h2>Banho e Tosa</h2>
+        <span class="tag-badge">Sem tele & busca</span>
+
+        <p class="descricao">
+          Inclui penteados, laços, perfume suave de lavanda para todos os pets e petisco de lavanda.
+        </p>
+
+        <div class="card-footer">
+          <span class="preco">R$ 80,00</span>
+          <a href="formulario.html" class="btn-organico">Agende aqui!</a>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Card 2: Com Tele & Busca -->
+    <article class="card-servico">
+      <div class="card-imagem">
+        <img src="imagens/tele.jpg" alt="Serviço de Tele e Busca">
+      </div>
+
+      <div class="card-conteudo">
+        <h2>Banho e Tosa</h2>
+        <span class="tag-badge destaque">Com tele & busca</span>
+
+        <p class="descricao">
+          Inclui penteados, laços, perfume suave de lavanda e petisco. 
+          <small>*Atendemos Porto Alegre e região metropolitana.</small>
+        </p>
+
+        <div class="card-footer">
+          <span class="preco">R$ 100,00</span>
+          
+          <a href="formulario.html" class="btn-organico">Agende aqui!</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+        <br>
             
  <!--Footer com informações de contato e meu Github-->
     <footer>
