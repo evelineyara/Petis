@@ -88,3 +88,68 @@ main {
 .petis-texto p {
     color: var(--roxo);
 }
+
+/* Container da Seção */
+.sobre-container {
+    padding: 4rem 10%;
+    text-align: center;
+    color: #333333; /* Cor mais escura para aumentar o contraste e a leitura */
+}
+
+.sobre-container h2 {
+    font-size: 2.2rem;
+    color: #572170; /* Roxo principal */
+    margin-bottom: 0.5rem;
+}
+
+.sobre-container .subtitulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 2.5rem;
+}
+
+/* Organização em Grid dos Cards */
+.cards-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.card .icone {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    color: #572170;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Bloco de Localização */
+.localizacao {
+    background-color: #e8d7f7;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    color: #572170;
+}
