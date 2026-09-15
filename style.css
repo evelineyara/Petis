@@ -6,10 +6,10 @@
     --font-padrao: Quicksand, sans serif;
     --font-padrao02: Nunito, sans serif;
 
-    --roxo: #501B69;
+    --roxo: #572170;
     --roxo2: #290c37;
-    --lilas: #f9d3ff;
-    --lilas2: #b658c4;
+    --lilas: #f8ceff;
+    --lilas2: #83438d;
     --preto: #000000;
     --branco: #FFFFFF;
 }
@@ -23,4 +23,68 @@
 
 body {
     background-color: var(--lilas);
+}
+
+main {
+    margin-top: 150px;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 140px auto 0 auto; /* Mantem o espaçamento da nav*/
+    position: relative;
+}
+
+.petis-texto {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Container da img com posição relativa*/
+.petis-imagem {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Imagem dos pets em png*/
+.petis-imagem img {
+    position: relative;
+    z-index: 2; /* Fica á frente do fundo lilás*/
+    max-width: 100%;
+    height: auto;
+    border-radius: 50% 30% 40% 60%;
+}
+
+.fundo-onda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #572170;
+    z-index: 1; /* Fica atrás da img dos pets em png*/
+
+    /* Cria o formato de onda/curva orgânica*/
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.petis-texto {
+    align-items: center;
+    font-weight: bold;
+}
+
+.petis-texto h1 {
+    color: #290c37;
+}
+
+.petis-texto p {
+    color: var(--roxo);
 }

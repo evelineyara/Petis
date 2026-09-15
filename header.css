@@ -18,11 +18,21 @@ nav {
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 70px;
     z-index: 1000; /* Para ficar acima do conteúdo.*/
     display: flex;
     padding-top: 60px;
+    padding-bottom: 60px;
+
+    /* Cor de fundo semitransparente*/
+    background-color: #f9d3ff35;
+
+    /* Efeito de desfoque no que passa atrás do nav*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para o Safari*/
 }
 
 .navbar ul {
@@ -38,12 +48,35 @@ nav {
     text-decoration: none;
     color: var(--roxo);
     font-weight: bold;
-    transition-duration: 0.5s;
+    position: relative;
+    padding-bottom: 4px;
+    transition-duration: 0.3s;
 }
 
 .navbar a:hover {
     color: var(--lilas2);
     font-weight: bolder;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Começa sem largura */
+    height: 2px; /* Espessura da linha */
+    background-color: var(--roxo);
+    transition: width 0.3s ease-in-out; /* Velocidade da animação */
+}
+
+/* Expande a linha no Hover (ao passar o mouse) */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Mantém a linha expandida na Página Ativa */
+.navbar a.active::after {
+    width: 100%;
 }
 
 .navbar img {
