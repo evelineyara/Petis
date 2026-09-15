@@ -28,7 +28,7 @@ nav {
     padding-bottom: 60px;
 
     /* Cor de fundo semitransparente*/
-    background-color: #f9d3ff35;
+    background-image: to right, #f8ceff, #83438d;
 
     /* Efeito de desfoque no que passa atrás do nav*/
     backdrop-filter: blur(10px);

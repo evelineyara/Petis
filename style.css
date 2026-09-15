@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--lilas);
+    background-image: linear-gradient(to right, var(--lilas), var(--lilas2));
 }
 
 main {
@@ -97,15 +97,13 @@ main {
 }
 
 .sobre-container h2 {
-    font-size: 2.2rem;
-    color: #572170; /* Roxo principal */
+    color: #290c37; /* Roxo principal */
     margin-bottom: 0.5rem;
 }
 
 .sobre-container .subtitulo {
-    font-size: 1.2rem;
     font-weight: bold;
-    color: #6a1b9a;
+    color: #572170;
     margin-bottom: 2.5rem;
 }
 
@@ -119,7 +117,7 @@ main {
 }
 
 .card {
-    background-color: #ffffff7c;
+    background-color: #290c37;
     padding: 1.5rem;
     border-radius: 16px;
     flex: 1;
@@ -157,19 +155,19 @@ main {
 }
 
 .card h3 {
-    color: #572170;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
 .card p {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #555;
+    color: white;
 }
 
 /* Bloco de Localização */
 .localizacao {
-    background-color: #e8d7f7;
+    background-color: #f4b9ff;
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 30px;
