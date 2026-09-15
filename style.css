@@ -127,10 +127,33 @@ main {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
 }
 
+/* Prepara o card para a animação */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação ao passar o mouse */
+.card:hover {
+    transform: translateY(-8px); /* Sobe o card 8 pixels */
+    box-shadow: 0 12px 24px rgba(87, 33, 112, 0.15); /* Sombra lilás suave */
+    cursor: pointer;
+}
+
 .card .icone {
     font-size: 2.5rem;
     display: block;
     margin-bottom: 0.5rem;
+}
+
+/* Prepara o ícone */
+.card .icone {
+    transition: transform 0.3s ease;
+}
+
+/* Faz o ícone aumentar ligeiramente quando o card recebe o hover */
+.card:hover .icone {
+    transform: scale(1.2) rotate(5deg); /* Aumenta 20% e dá uma leve inclinada */
+    cursor: pointer;
 }
 
 .card h3 {
