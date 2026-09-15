@@ -279,6 +279,123 @@ main {
     font-size: 1.1rem;
     color: #572170;
 }
+/*------------- agendamento -----------------*/
+
+/* Container do Formulário */
+.agendamento-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(74, 21, 75, 0.08);
+  font-family: var(--font-padrao02);
+}
+
+.agendamento-container h2 {
+  color: #290c37;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.agendamento-container p {
+  color: #666;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Estrutura do Formulário */
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Organização de campos lado a lado */
+.linha-dupla {
+  display: flex;
+  gap: 15px;
+}
+
+.linha-dupla .grupo-campo {
+  flex: 1;
+}
+
+/* Estilização dos Rótulos e Campos */
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grupo-campo label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #290c37;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #f0e6f2;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #faf7fc;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Efeito ao Clicar no Campo (Focus) */
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+  border-color: #572170;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(74, 21, 75, 0.1);
+}
+
+/* Botão de Envio com Formato Orgânico */
+.btn-enviar {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #572170;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  /* Visual curvo idêntico ao botão da Hero */
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; 
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 21, 75, 0.2);
+}
+
+.btn-enviar:hover {
+    background-color: #290c37;
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 21, 75, 0.3);
+}
+
+/* --- RESPONSIVIDADE (Celulares e Telas Pequenas) --- */
+@media (max-width: 600px) {
+  .linha-dupla {
+    flex-direction: column; /* Em telas menores, coloca os campos lado a lado em pé */
+    gap: 16px;
+  }
+  
+  .agendamento-container {
+    margin: 20px;
+    padding: 20px 15px;
+  }
+}
+
+/*--------------------- footer ---------------*/
 
 footer {
     text-align: center;

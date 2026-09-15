@@ -30,10 +30,69 @@
 
     <br>
 
-    <main>
-        <article>
+<main>
+<section class="agendamento-container">
+  <h2>Agende uma Visita ou Serviço</h2>
+  <p>Preencha os dados abaixo e entraremos em contato para confirmar. <br>
 
-        </article>
+    <strong>Atendimentos somente mediante ao agendamento prévio.</strong>
+  </p>
+
+  <form class="form-agendamento">
+    <!-- Nome do Tutor -->
+    <div class="grupo-campo">
+      <label for="nome">Seu Nome</label>
+      <input type="text" id="inome" name="nome" placeholder="Ex: Maria Silva" required>
+    </div>
+
+    <!-- Nome do Pet -->
+    <div class="grupo-campo">
+      <label for="pet">Nome do seu Pet</label>
+      <input type="text" id="ipet" name="pet" placeholder="Ex: Lindinha" required>
+    </div>
+
+    <!-- Linha dupla: Serviço e Telefone/WhatsApp -->
+    <div class="linha-dupla">
+      <div class="grupo-campo">
+        <label for="servico">Serviço Desejado</label>
+        <select id="iservico" name="servico" required>
+          <option value="" disabled selected>Selecione um serviço</option>
+
+          <option value="com_tele">Banho & Tosa <strong>com</strong> tele e busca</option>
+
+          <option value="sem_tele">Banho & Tosa <strong>sem</strong> tele e busca</option>
+        </select>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="whatsapp">WhatsApp / Telefone</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+      </div>
+    </div>
+
+    <!-- Linha dupla: Data e Hora -->
+    <div class="linha-dupla">
+      <div class="grupo-campo">
+        <label for="data">Data Desejada</label>
+        <input type="date" id="idata" name="data" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="hora">Horário Preferencial</label>
+        <input type="time" id="ihora" name="hora" required>
+      </div>
+    </div>
+
+    <!-- Observações -->
+    <div class="grupo-campo">
+      <label for="mensagem">Observações (opcional)</label>
+      <textarea id="mensagem" name="mensagem" rows="3" placeholder="Algum cuidado especial com o pet?"></textarea>
+    </div>
+
+    <!-- Botão de Envio (Estilo Orgânico) -->
+    <button type="submit" class="btn-enviar">Confirmar Agendamento</button>
+  </form>
+</section>
     </main>
     
 
