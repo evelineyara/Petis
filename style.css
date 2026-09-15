@@ -21,12 +21,12 @@
 
 /* 2. Animação da página que está SAINDO */
 ::view-transition-old(root) {
-  animation: fade-slide-out 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fade-slide-out 0.35s ease;
 }
 
 /* 3. Animação da página que está ENTRANDO */
 ::view-transition-new(root) {
-  animation: fade-slide-in 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fade-slide-in 0.35s ease;
 }
 
 /* Regras do efeito de saída (desliza levemente e apaga) */
@@ -61,7 +61,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, var(--lilas), var(--lilas2));
+    background-image: linear-gradient(to right, var(--lilas), white);
 }
 
 main {
@@ -93,13 +93,30 @@ main {
     align-items: flex-end;
 }
 
-/* Imagem dos pets em png*/
+/* Imagem do gatinho em png*/
 .petis-imagem img {
     position: relative;
     z-index: 2; /* Fica á frente do fundo lilás*/
     max-width: 100%;
     height: auto;
     border-radius: 50% 30% 40% 60%;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px); 
+    /* Eleva a imagem 12px */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.gatinho {
+  animation: flutuar 3s ease-in-out infinite;
 }
 
 .fundo-onda {
@@ -112,12 +129,29 @@ main {
     z-index: 1; /* Fica atrás da img dos pets em png*/
 
     /* Cria o formato de onda/curva orgânica*/
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 80% 40% 30% 70% / 50% 30% 70% 40%;
 }
 
 .petis-texto {
     align-items: center;
     font-weight: bold;
+}
+
+/* 1. Define a animação com @keyframes */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Começa 30px abaixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Volta para a posição original */
+  }
+}
+
+/* 2. Aplica a animação ao elemento */
+.petis-texto {
+  animation: surgir 1s ease-out forwards;
 }
 
 .petis-texto h1 {
