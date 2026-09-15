@@ -175,6 +175,15 @@ main {
     color: #572170;
 }
 
+.agradecimento {
+    background-color: #f4b9ff;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    color: #572170;
+}
+
 footer {
     width: auto;
     text-align: center;
