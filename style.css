@@ -84,6 +84,29 @@ main {
     max-width: 500px;
 }
 
+.btn-organico {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #572170;
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 40px;
+  
+  /* Suavização de transições e sombra leve */
+  box-shadow: 0 4px 15px rgba(74, 21, 75, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-organico:hover {
+  /* Inverte levemente as curvas para dar dinamismo */
+  border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+  transform: translateY(-3px);
+  background-color: #290c37;
+  box-shadow: 0 8px 20px rgba(74, 21, 75, 0.3);
+}
+
 /* Container da img com posição relativa*/
 .petis-imagem {
     flex: 1;
