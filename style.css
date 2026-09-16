@@ -182,7 +182,7 @@ main {
 }
 
 .petis-texto p {
-    color: var(--roxo);
+    color: var(--roxo2);
 }
 
 /* Container da Seção */
@@ -199,7 +199,7 @@ main {
 
 .sobre-container .subtitulo {
     font-weight: bold;
-    color: #572170;
+    color: #290c37;
     margin-bottom: 2.5rem;
 }
 
