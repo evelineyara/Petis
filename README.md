@@ -20,3 +20,15 @@
 ---
 
 <a href="https://evelineyara.github.io/Petis/" target="_blank">Site do Petis</a>
+<style>
+  a {
+    color: purple;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+</style>
