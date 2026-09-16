@@ -1,4 +1,4 @@
-*✦ Petis, amor & cuidado para o seu pet.*
+<h1> ✦ Petis, amor & cuidado para o seu pet. </h1>
 
 | Petis é um petshop com produtos veganos que tem como especialidade especiarias com lavanda em seus produtos.
 | O site foi criado utilizando a ferramenta Miro para organização, VSCODE para criação do código, versionamento com GIT e GitHub, e linguagens HTML5/CSS3.
