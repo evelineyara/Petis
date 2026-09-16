@@ -16,6 +16,7 @@
 <img width="1637" height="873" alt="Rodapé - Petis" src="https://github.com/user-attachments/assets/e92ec9b1-8546-42a2-8ebe-09b4fb1ab009" />
 
 <br>
+
 ---
 
 <a href="https://evelineyara.github.io/Petis/" target="_blank">Site do Petis</a>
